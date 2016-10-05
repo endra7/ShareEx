@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "898258846760",
+    "firebase_url": "https://shareex-7c9be.firebaseio.com",
+    "project_id": "shareex-7c9be",
+    "storage_bucket": "shareex-7c9be.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:898258846760:android:ed5491f431a5e337",
+        "android_client_info": {
+          "package_name": "com.endra.shareex"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "898258846760-5p34hh3mc5kjh9pp0fgoaa801s31osa6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.endra.shareex",
+            "certificate_hash": "475577D3346333387DDAD5E78A7F1162113D96C0"
+          }
+        },
+        {
+          "client_id": "898258846760-mrap236qb6pmfkc1a6v69ug37cf741gh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNntHVokrM-UXzBHzrtzL42ddYENPiM0g"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "898258846760-mrap236qb6pmfkc1a6v69ug37cf741gh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
