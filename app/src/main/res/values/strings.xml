@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ShareEx</string>
+    <string name="createAccount">Click here to create account</string>
 </resources>
