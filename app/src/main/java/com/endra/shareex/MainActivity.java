@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         mDatabase= FirebaseDatabase.getInstance().getReference().child("Blog");
+        mDatabase.keepSynced(true);
         mAuth=FirebaseAuth.getInstance();
         mAuthListener=new FirebaseAuth.AuthStateListener() {
             @Override

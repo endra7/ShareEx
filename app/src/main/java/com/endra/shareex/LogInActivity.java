@@ -58,11 +58,7 @@ public class LogInActivity extends AppCompatActivity {
         String email=lemail.getText().toString().trim();
         String password=lpassword.getText().toString().trim();
 
-        if(TextUtils.isEmpty(email) && TextUtils.isEmpty(password)){
-            mProgress.dismiss();
-            Toast.makeText(LogInActivity.this,"Please enter Email and Password",Toast.LENGTH_SHORT).show();
-        }
-        else{
+        if(!TextUtils.isEmpty(email) && !TextUtils.isEmpty(password)){
             mAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
@@ -72,8 +68,17 @@ public class LogInActivity extends AppCompatActivity {
                         toMain.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                         startActivity(toMain);
                     }
+                    else{
+                        mProgress.dismiss();
+                        Toast.makeText(getApplicationContext(),"Invalid Email or Password",Toast.LENGTH_SHORT).show();
+                    }
                 }
             });
+        }
+        else
+        {
+            mProgress.dismiss();
+            Toast.makeText(LogInActivity.this,"Please enter Email and Password",Toast.LENGTH_SHORT).show();
         }
     }
 }
