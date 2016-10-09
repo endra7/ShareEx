@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/reaback"
     tools:context="com.endra.shareex.RegisterActivity">
     <RelativeLayout
         android:layout_width="match_parent"
@@ -17,42 +18,42 @@
         android:layout_margin="10dp"
         android:padding="2dp"
         android:id="@+id/profilepicBtn"
-        android:background="@drawable/input_outline"
+        android:background="@drawable/post_outline"
         />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/input_outline"
+        android:background="@drawable/post_outline"
         android:layout_below="@id/profilepicBtn"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:padding="10dp"
         android:layout_margin="10dp"
-        android:text="@string/name"
+        android:hint="@string/name"
         android:id="@+id/nameField"
         />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/input_outline"
+        android:background="@drawable/post_outline"
         android:layout_below="@id/nameField"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:padding="10dp"
         android:layout_margin="10dp"
-        android:text="@string/email"
+        android:hint="@string/email"
         android:id="@+id/emailField"
         />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/input_outline"
+        android:background="@drawable/post_outline"
         android:layout_below="@id/emailField"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:padding="10dp"
         android:layout_margin="10dp"
-        android:text="@string/password"
+        android:hint="@string/password"
         android:id="@+id/passwordField"
         />
     <Button
@@ -63,8 +64,9 @@
         android:layout_alignParentStart="true"
         android:layout_margin="10dp"
         android:padding="10dp"
-        android:background="@drawable/input_outline"
-        android:text="Set Up Complete"
+        android:backgroundTint="#ffffff"
+        android:background="@drawable/post_outline"
+        android:text="SIGN UP"
         android:id="@+id/registerBtn"
         />
 

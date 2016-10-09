@@ -1,15 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/login"
     tools:context="com.endra.shareex.LogInActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        >
+    <com.endra.shareex.MyTextViewForTitle
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/funblog"
+        android:textSize="45sp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_gravity="center_horizontal"
+        />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter email"
+        android:textColor="#000"
+        android:background="@drawable/input_outline"
+        android:padding="14dp"
         android:id="@+id/loginemailField"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
         />
     <EditText
         android:layout_width="match_parent"
@@ -17,24 +40,31 @@
         android:hint="Password"
         android:inputType="textPassword"
         android:id="@+id/loginpasswordField"
+        android:background="@drawable/input_outline"
+        android:padding="14dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
         />
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Log In"
+        android:background="@color/colorPrimary"
         android:id="@+id/loginBtn"
+        android:layout_margin="5dp"
         />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/createAccount"
+        android:text="Click here to create account"
         android:id="@+id/toRegisterBtn"
-        android:layout_marginLeft="60dp"
+       android:layout_gravity="center_horizontal"
         android:textColor="@color/colorPrimary"
         android:background="#00ffffff"
         android:padding="5dp"
-
-
         />
-</LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,7 +1,8 @@
 <resources>
     <string name="app_name">ShareEx</string>
-    <string name="createAccount">Click here to create account</string>
     <string name="email">Your Email</string>
     <string name="password">Password Here</string>
     <string name="name">Enter Name Here</string>
+    <string name="title_activity_splash_screen">SplashScreenActivity</string>
+    <string name="funblog">FUN-BLOG</string>
 </resources>
